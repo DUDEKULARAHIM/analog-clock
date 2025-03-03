@@ -1,5 +1,5 @@
 # 👋 Welcome to My Portfolio
- -- Dudekula Rahim
+ - Dudekula Rahim
 ## About Me
 Skilled withFull Stack Developer with a solid foundation in both front-end and back-end technologies. I hold a Bachelor of Science in Computer Science from Lovely Professional University. With hands-on experience in HTML, CSS, and JavaScript, I enjoy creating user-friendly interfaces and responsive layouts. My expertise extends to backend development using Express.js and Node.js, along with database management using MongoDB. I am dedicated to optimizing database performance for seamless application functionality. 🚀
 
