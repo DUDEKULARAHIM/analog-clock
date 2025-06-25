@@ -98,9 +98,14 @@
             document.getElementById('hour').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
             document.getElementById('minute').style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
             document.getElementById('second').style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
-            
+
+            const displayHours = (hours % 12) || 12;  // Convert 24h to 12h
+const ampm = hours >= 12 ? 'PM' : 'AM';   // AM/PM
             document.getElementById('time-display').innerText = 
-                `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    `${String(displayHours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')} ${ampm}`;
+            
+            //document.getElementById('time-display').innerText = 
+               // `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
         }
         setInterval(updateClock, 1000);
         updateClock();
