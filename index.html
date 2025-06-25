@@ -91,7 +91,7 @@
             const minutes = now.getMinutes();
             const seconds = now.getSeconds();
             
-            const hourDeg = ((hours % 12) * 30) + (minutes / 2);
+            const hourDeg = (((hours % 12)||12) * 30) + (minutes / 2);
             const minuteDeg = (minutes * 6) + (seconds * 0.1);
             const secondDeg = seconds * 6;
             
